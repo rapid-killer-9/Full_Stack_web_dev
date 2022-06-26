@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about HTML Forms</title>
+</head>
+<body>
+    
+    <!-- html forms  -->
+    <h3>HTML Forms</h3>
+
+    <!-- In action we have given backend file which helps to connect to database -->
+    <form action="main.php"> 
+
+        <label for="fname">Firstname:</label>
+        <input type="text" id="fname"> <br><br>
+        <label for="lname">Lastname:</label>
+        <input type="text" id="lname"> <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"> <br> <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date"> <br> <br>
+
+        <label for="mobile_no">Mobile no:</label>
+        <input type="number" id="mobile_no"> <br> <br>
+
+        <!-- Radio buttons  -->
+        <h4>select your gender</h4>
+        <label for="g_male">Male:</label>
+        <input type="radio" id="g_male" name="gender"> <br> <br>
+        <label for="g_female">Female:</label>
+        <input type="radio" id="g_female" name="gender"> <br> <br>
+        <label for="g_others">Others:</label>
+        <input type="radio" id="g_others" name="gender"> <br> <br>
+
+        <!-- checkboxes -->
+        <h4>select the languages you know</h4>
+        <label for="lang1">c</label>
+        <input type="checkbox" id="lang1" name="languages" checked> <br> <br>
+        <label for="lang2">cpp</label>
+        <input type="checkbox" id="lang2" name="languages"> <br> <br>
+        <label for="lang3">java</label>
+        <input type="checkbox" id="lang3" name="languages" checked> <br> <br>
+        <label for="lang4">python</label>
+        <input type="checkbox" id="lang4" name="languages"> <br> <br>
+
+         <!-- select options -->
+        <label for="skill">select skills you know</label>
+        <select name="skills" id="skill" size="4" multiple>
+            <option value="skill1">c</option>
+            <option value="skill2">cpp</option>
+            <option value="skill3">java</option>
+            <option value="skill4">python</option>
+            <option value="skill5">c#</option>
+            <option value="skill6">html</option>
+            <option value="skill7">css</option>
+            <option value="skill8">js</option>
+        </select>
+        <br><br>
+        <h4>write your suggestions</h4>
+        <textarea name="textarea" id="text" cols="30" rows="10"></textarea> <br>
+
+        <!-- button for submitting -->
+        <input type="submit" value="submit_now">
+
+        <!-- button to reset form  -->
+        <input type="reset" value="reset_now">
+        
+    </form>
+</body>
+</html>
